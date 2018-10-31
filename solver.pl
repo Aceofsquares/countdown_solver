@@ -1,4 +1,4 @@
-countdownsolve([H], Target, X):-H =:= Target, X = H; abs(H - Target) =< 10, X = H.
+countdownsolve([H], Target, X):-H =:= Target, X = H.
 
 
 countdownsolve([H1,H2|T], Target, X):-
