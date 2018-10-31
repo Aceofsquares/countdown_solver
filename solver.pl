@@ -10,7 +10,7 @@ countdownsolve([H1,H2|T], Target, X):-
     H1 > 1, H2 > 1, Mul = H1 * H2, 
     countdownsolve([Mul | T], Target, X);
     
-    H2 =\= 0, Div = H1 / H2, H1 mod H2 =:= 0,
+    H2 > 1, Div = H1 / H2, H1 mod H2 =:= 0,
     countdownsolve([Div | T], Target, X);
     
     Add = H1 + H2,
